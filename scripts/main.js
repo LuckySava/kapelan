@@ -102,7 +102,7 @@ const DATA = [
         plotId: 3,
         externalLink: false,
         url: "",
-        plotTitle: "Вчення Православное Церкви про війну",
+        plotTitle: "Вчення Православної Церкви про війну",
         plotBody:
           "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       },
@@ -252,10 +252,14 @@ const DATA = [
   },
 ];
 
+console.log(DATA);
+
 document.addEventListener("DOMContentLoaded", () => {
   // Create top level app title (by category)
   const app_template = (title, id) =>
     `<h3 data-cardid=${id} class="app-inner">${title}</h3>`;
+  const list_template = (title, id) =>
+    `<h4 data-categoryTitleId=${id} class="category-title">${title}</h4>`;
 
   const app = document.querySelector(".app");
 
@@ -277,7 +281,43 @@ document.addEventListener("DOMContentLoaded", () => {
   Array.from(cards).forEach((el) =>
     el.addEventListener("click", function (e) {
       const cardId = e.target.dataset.cardid;
+      console.log("cardId", cardId);
       app.classList.add("hide-title");
+
+      const category = DATA.find(({ id }) => id == cardId);
+      const categoryList = createCategoryListTitle(category);
+      showCreatedListTitle(categoryList);
+
+      console.log("categoryList", categoryList);
     })
   );
+
+  const createCategoryListTitle = (category) => {
+    const title = category.title;
+    const list = category.plot.map((el) => {
+      if (el.externalLink && el.url) {
+        return `<a data-titleId=${el.plotId} class="list-title" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
+      }
+
+      return `<h4 data-titleId=${el.plotId} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
+    });
+
+    return { title, list: list.join(" ") };
+  };
+
+  const showCreatedListTitle = ({ title, list }) => {
+    const listTitle = `<div class="category">
+    <p class="arrow-back">
+    <span class="arrow">&#8592; </span>
+    <span class="arrow-text">Назад до змісту</span>
+    </p>
+    <h3>${title}</h3>
+    ${list}
+    </div>`;
+
+    console.log("listTitle", listTitle);
+
+    app.innerHTML = "";
+    app.innerHTML = listTitle;
+  };
 });
