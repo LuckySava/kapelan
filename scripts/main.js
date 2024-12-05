@@ -254,14 +254,14 @@ const DATA = [
 
 document.addEventListener("DOMContentLoaded", () => {
   // Create top level app title (by category)
-  const app_template = (title) =>
-    `<div class="app-inner"><h3 class="app-title">${title}</h3></div>`;
+  const app_template = (title, id) =>
+    `<h3 data-cardid=${id} class="app-inner">${title}</h3>`;
 
   const app = document.querySelector(".app");
 
   const createTopList = () => {
     const topList = DATA.map((el) => {
-      return app_template(el.title);
+      return app_template(el.title, el.id);
     });
 
     return topList;
@@ -271,5 +271,13 @@ document.addEventListener("DOMContentLoaded", () => {
   app.innerHTML = list.join(" ");
 
   // Show list by category
-  console.log(Array.from(list));
+  const cards = document.querySelectorAll(".app-inner");
+
+  console.log(Array.from(cards));
+  Array.from(cards).forEach((el) =>
+    el.addEventListener("click", function (e) {
+      const cardId = e.target.dataset.cardid;
+      app.classList.add("hide-title");
+    })
+  );
 });

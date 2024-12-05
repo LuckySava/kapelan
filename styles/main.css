@@ -28,7 +28,6 @@ h2 {
 }
 
 h3 {
-  margin: 0 5px;
   font-size: 23px;
 }
 
@@ -68,6 +67,7 @@ sub {
   position: relative;
   transition: 0.3s;
   counter-increment: numbers;
+  margin: 0;
 }
 
 .app-inner:hover {
@@ -79,7 +79,7 @@ sub {
   content: counter(numbers);
   counter-reset: none;
   display: inline-block;
-  line-height: 2.5;
+  line-height: 1.8;
   text-align: center;
   color: #fff;
   border-radius: 50%;
@@ -90,6 +90,10 @@ sub {
   right: 10px;
   bottom: 10px;
   font-weight: 600;
+}
+
+.app.hide-title {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
