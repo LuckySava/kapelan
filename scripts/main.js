@@ -275,9 +275,9 @@ document.addEventListener("DOMContentLoaded", () => {
   app.innerHTML = list.join(" ");
 
   // Show list by category
-  const cards = document.querySelectorAll(".app-inner");
 
   const createCategories = function () {
+    const cards = document.querySelectorAll(".app-inner");
     Array.from(cards).forEach((el) =>
       el.addEventListener("click", function (e) {
         const cardId = e.target.dataset.cardid;
