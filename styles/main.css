@@ -104,6 +104,10 @@ sub {
 
 /* Category */
 
+.category {
+  width: 100%;
+}
+
 .arrow {
   font-size: 50px;
 }
@@ -119,6 +123,41 @@ sub {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
+  max-width: 250px;
+  transition: 0.3s;
+}
+.arrow-back:hover {
+  opacity: 0.8;
+}
+
+.list-titlelink {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 5px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list-title-withbody {
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.list-title-withbody:hover {
+  opacity: 0.8;
+}
+
+.category-title {
+  font-size: 32px;
 }
 
 @media only screen and (max-width: 767px) {

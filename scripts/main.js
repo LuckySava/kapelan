@@ -277,26 +277,29 @@ document.addEventListener("DOMContentLoaded", () => {
   // Show list by category
   const cards = document.querySelectorAll(".app-inner");
 
-  console.log(Array.from(cards));
-  Array.from(cards).forEach((el) =>
-    el.addEventListener("click", function (e) {
-      const cardId = e.target.dataset.cardid;
-      console.log("cardId", cardId);
-      app.classList.add("hide-title");
+  const createCategories = function () {
+    Array.from(cards).forEach((el) =>
+      el.addEventListener("click", function (e) {
+        const cardId = e.target.dataset.cardid;
+        console.log("cardId", cardId);
+        app.classList.add("hide-title");
 
-      const category = DATA.find(({ id }) => id == cardId);
-      const categoryList = createCategoryListTitle(category);
-      showCreatedListTitle(categoryList);
+        const category = DATA.find(({ id }) => id == cardId);
+        const categoryList = createCategoryListTitle(category);
+        showCreatedListTitle(categoryList);
 
-      console.log("categoryList", categoryList);
-    })
-  );
+        console.log("categoryList", categoryList);
+      })
+    );
+  };
+
+  createCategories();
 
   const createCategoryListTitle = (category) => {
     const title = category.title;
     const list = category.plot.map((el) => {
       if (el.externalLink && el.url) {
-        return `<a data-titleId=${el.plotId} class="list-title" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
+        return `<a data-titleId=${el.plotId} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
       }
 
       return `<h4 data-titleId=${el.plotId} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
@@ -311,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <span class="arrow">&#8592; </span>
     <span class="arrow-text">Назад до змісту</span>
     </p>
-    <h3>${title}</h3>
+    <h3 class="category-title">${title}</h3>
     ${list}
     </div>`;
 
@@ -319,5 +322,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     app.innerHTML = "";
     app.innerHTML = listTitle;
+
+    const arrowBack = document.querySelector(".arrow-back");
+    arrowBack.addEventListener("click", () => {
+      console.log(100);
+      const list = createTopList();
+      const app = document.querySelector(".app");
+      app.classList.remove("hide-title");
+      app.innerHTML = list.join(" ");
+      createCategories();
+    });
   };
 });
