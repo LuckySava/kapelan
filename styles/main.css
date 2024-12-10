@@ -116,7 +116,8 @@ sub {
   margin-bottom: -10px;
 }
 
-.arrow-back {
+.arrow-back,
+.arrow-back-inner {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -127,7 +128,8 @@ sub {
   max-width: 250px;
   transition: 0.3s;
 }
-.arrow-back:hover {
+.arrow-back:hover,
+.arrow-back-inner:hover {
   opacity: 0.8;
 }
 
@@ -163,6 +165,21 @@ sub {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.app.hide-category-title .category {
+  display: none;
+}
+
+.text-title {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.text-body {
+  color: #fff;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 767px) {

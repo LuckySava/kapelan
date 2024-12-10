@@ -150,7 +150,7 @@ const DATA = [
   },
   {
     id: 4,
-    title: "Короткий молитволов капелана. Требник",
+    title: "Короткий молитвослов капелана. Требник",
     plot: [
       {
         plotId: 1,
@@ -255,6 +255,8 @@ const DATA = [
 console.log(DATA);
 
 document.addEventListener("DOMContentLoaded", () => {
+  let CURRENT_CATEGORY_ID = null;
+
   // Create top level app title (by category)
   const app_template = (title, id) =>
     `<h3 data-cardid=${id} class="app-inner">${title}</h3>`;
@@ -281,10 +283,13 @@ document.addEventListener("DOMContentLoaded", () => {
     Array.from(cards).forEach((el) =>
       el.addEventListener("click", function (e) {
         const cardId = e.target.dataset.cardid;
+        CURRENT_CATEGORY_ID = cardId;
         console.log("cardId", cardId);
         app.classList.add("hide-title");
 
-        const category = DATA.find(({ id }) => id == cardId);
+        const category = DATA.find(
+          ({ id }) => id == (CURRENT_CATEGORY_ID || cardId)
+        );
         const categoryList = createCategoryListTitle(category);
         showCreatedListTitle(categoryList);
 
@@ -297,12 +302,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const createCategoryListTitle = (category) => {
     const title = category.title;
+    console.log("CATeGORY", category);
     const list = category.plot.map((el) => {
       if (el.externalLink && el.url) {
-        return `<a data-titleId=${el.plotId} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
+        return `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
       }
 
-      return `<h4 data-titleId=${el.plotId} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
+      return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
     });
 
     return { title, list: list.join(" ") };
@@ -325,12 +331,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const arrowBack = document.querySelector(".arrow-back");
     arrowBack.addEventListener("click", () => {
-      console.log(100);
       const list = createTopList();
       const app = document.querySelector(".app");
       app.classList.remove("hide-title");
       app.innerHTML = list.join(" ");
       createCategories();
     });
+
+    openDocument();
+  };
+
+  const openDocument = () => {
+    const bodyTextTemplate = (title, body) =>
+      `<div class="finish-text">
+        <p class="arrow-back-inner">
+    <span class="arrow">&#8592; </span>
+    <span class="arrow-text">Назад до змісту</span>
+    </p>
+    <h4 class="text-title">${title}</h4>
+    <div class="text-body">${body}</div>
+    </div>`;
+
+    const allTitles = document.querySelectorAll(".list-title-withbody");
+
+    Array.from(allTitles).forEach((el) =>
+      el.addEventListener("click", function (e) {
+        const titleId = e.target.dataset.titleid;
+        const categoryId = e.target.dataset.categoryid;
+
+        const findObject = DATA.find(({ id }) => id == categoryId);
+
+        const plotText = findObject.plot.find(
+          ({ plotId }) => plotId == titleId
+        );
+        const text = bodyTextTemplate(plotText.plotTitle, plotText.plotBody);
+        const app = document.querySelector(".app");
+        app.classList.add("hide-category-title");
+        app.innerHTML = text;
+
+        document
+          .querySelector(".arrow-back-inner")
+          .addEventListener("click", () => {
+            const category = DATA.find(({ id }) => id == CURRENT_CATEGORY_ID);
+            const categoryList = createCategoryListTitle(category);
+
+            showCreatedListTitle(categoryList);
+            app.classList.remove("hide-category-title");
+          });
+      })
+    );
   };
 });
