@@ -310,7 +310,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (el?.print && el.file) {
-        console.log(77777777777777777);
         return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-copy">${el.plotTitle} <span class="print-symbol">&#x2399</span> </h4>`;
       }
 
