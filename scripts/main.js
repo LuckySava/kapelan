@@ -9,7 +9,7 @@ const DATA = [
         url: "",
         plotTitle: "Закон про службу військового капеланства",
         plotBody:
-          "Розділ I. ЗАГАЛЬНІ ПОЛОЖЕННЯ. Стаття 1. Визначення термінів 1. У цьому Законі наведені нижче терміни вживаються в такому значенні: 1) військова капеланська діяльність - діяльність, яку здійснюють військові капелани з метою сприяння реалізації конституційного права військовослужбовців, працівників та членів їх сімей на свободу світогляду та віросповідання шляхом задоволення їх духовно-релі",
+          "<strong>Розділ I. ЗАГАЛЬНІ ПОЛОЖЕННЯ.</strong> Стаття 1. Визначення термінів 1. У цьому Законі наведені нижче терміни вживаються в такому значенні: 1) військова капеланська діяльність - діяльність, яку здійснюють військові капелани з метою сприяння реалізації конституційного права військовослужбовців, працівників та членів їх сімей на свободу світогляду та віросповідання шляхом задоволення їх духовно-релі",
       },
       {
         plotId: 2,
@@ -228,7 +228,7 @@ const DATA = [
   },
   {
     id: 5,
-    title: "форми документів для друку",
+    title: "Документи, форми, рапорти",
     plot: [
       {
         plotId: 1,
@@ -304,8 +304,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = category.title;
     console.log("CATeGORY", category);
     const list = category.plot.map((el) => {
+      console.log("EL CATEGORY", el);
       if (el.externalLink && el.url) {
         return `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
+      }
+
+      if (el?.print && el.file) {
+        console.log(77777777777777777);
+        return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-copy">${el.plotTitle} <span class="print-symbol">&#x2399</span> </h4>`;
       }
 
       return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
