@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const list = category.plot.map((el) => {
       console.log("EL CATEGORY", el);
       if (el.externalLink && el.url) {
-        return `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle}</a>`;
+        return `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle} <span class="link-symbol">&#x1F517;</span></a>`;
       }
 
       if (el?.print && el.file) {
@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const listTitle = `<div class="category">
     <p class="arrow-back">
     <span class="arrow">&#8592; </span>
-    <span class="arrow-text">Назад до змісту</span>
+    <span class="arrow-text">Назад до категорії</span>
     </p>
     <h3 class="category-title">${title}</h3>
     ${list}
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `<div class="finish-text">
         <p class="arrow-back-inner">
     <span class="arrow">&#8592; </span>
-    <span class="arrow-text">Назад до змісту</span>
+    <span class="arrow-text">Назад до розділу</span>
     </p>
     <h4 class="text-title">${title}</h4>
     <div class="text-body">${body}</div>

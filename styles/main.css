@@ -133,6 +133,7 @@ sub {
 }
 
 .list-titlelink {
+  position: relative;
   display: block;
   text-decoration: none;
   color: #fff;
@@ -142,6 +143,13 @@ sub {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 600;
+  padding-right: 35px;
+}
+
+.link-symbol {
+  position: absolute;
+  right: 5px;
+  top: 7px;
 }
 
 .list-title-withbody,
@@ -152,6 +160,7 @@ sub {
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 20px;
 }
 
 .list-title-withbody:hover,
@@ -194,6 +203,12 @@ sub {
   font-size: 22px;
   color: #130f40;
   line-height: 1.4;
+}
+
+@media only screen and (max-width: 1024px) {
+  .device-frame {
+    max-width: calc(100% - 30px);
+  }
 }
 
 @media only screen and (max-width: 767px) {
