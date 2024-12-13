@@ -235,7 +235,6 @@ const DATA = [
         externalLink: false,
         url: "",
         plotTitle: "Приклад написання рапорту для переведення на посаду",
-        file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
         plotBody: "<img class='print-raport' src='./images/pidyomni.png'>",
         print: true,
         // file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
@@ -387,4 +386,13 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
   };
+
+  // Black Desktop Screen
+
+  const appIcon = document.querySelector(".app-icon");
+  const mobileDesktop = document.querySelector(".device-frame-desktop");
+
+  appIcon.addEventListener("click", () => {
+    mobileDesktop.remove();
+  });
 });
