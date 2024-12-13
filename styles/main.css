@@ -90,7 +90,7 @@ sub {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: #474787d1;
+  background-color: #5f7e42;
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -205,6 +205,10 @@ sub {
   line-height: 1.4;
 }
 
+.print-raport {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
   .device-frame {
     max-width: calc(100% - 30px);
@@ -214,5 +218,11 @@ sub {
 @media only screen and (max-width: 767px) {
   .app-inner {
     flex-basis: 100%;
+    margin: 5px;
+  }
+
+  .device-frame {
+    padding: 10px;
+    max-width: 100%;
   }
 }

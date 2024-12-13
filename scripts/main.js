@@ -235,18 +235,19 @@ const DATA = [
         externalLink: false,
         url: "",
         plotTitle: "Приклад написання рапорту для переведення на посаду",
-        plotBody: "",
-        print: true,
         file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        plotBody: "<img class='print-raport' src='./images/pidyomni.png'>",
+        print: true,
+        // file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       },
       {
         plotId: 2,
         externalLink: false,
         url: "",
         plotTitle: "Рапорт для відрядження",
-        plotBody: "",
+        plotBody: "<img class='print-raport' src='./images/pidyomni.png'>",
         print: true,
-        file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
       },
     ],
   },
@@ -309,8 +310,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle} <span class="link-symbol">&#x1F517;</span></a>`;
       }
 
-      if (el?.print && el.file) {
-        return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-copy">${el.plotTitle} <span class="print-symbol">&#x2399</span> </h4>`;
+      if (el?.print && el.print) {
+        return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-withbody list-title-copy">${el.plotTitle} <span class="print-symbol">&#x2399</span> </h4>`;
       }
 
       return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
@@ -328,8 +329,6 @@ document.addEventListener("DOMContentLoaded", () => {
     <h3 class="category-title">${title}</h3>
     ${list}
     </div>`;
-
-    console.log("listTitle", listTitle);
 
     app.innerHTML = "";
     app.innerHTML = listTitle;
@@ -358,6 +357,8 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>`;
 
     const allTitles = document.querySelectorAll(".list-title-withbody");
+
+    // Click on top titles
 
     Array.from(allTitles).forEach((el) =>
       el.addEventListener("click", function (e) {
