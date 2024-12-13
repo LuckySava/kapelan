@@ -247,12 +247,22 @@ sub {
 }
 
 @media only screen and (max-width: 1024px) {
+  h2 {
+    font-size: 40px;
+  }
   .device-frame {
     max-width: calc(100% - 30px);
   }
 }
 
 @media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
   .app-inner {
     flex-basis: 100%;
     margin: 5px;
