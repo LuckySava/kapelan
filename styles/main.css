@@ -42,9 +42,6 @@ body {
   padding: 15px;
 }
 
-h1 {
-}
-
 h2 {
   color: #fff;
   font-size: 52px;
@@ -123,15 +120,31 @@ sub {
 /* black desktop */
 
 .app-icon {
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .app-icon:hover {
   opacity: 0.8;
+}
+
+.android-icon {
+  text-align: center;
+}
+
+.android-icon img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.android-icon p {
+  color: #fff;
+  font-weight: bold;
+  max-width: 150px;
+  font-size: 20px;
+  margin-top: 2px;
 }
 
 /* Category */
