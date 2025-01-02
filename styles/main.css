@@ -154,7 +154,7 @@ sub {
 }
 
 .arrow {
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .arrow-text {
@@ -163,9 +163,9 @@ sub {
 
 .arrow-back,
 .arrow-back-inner {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 15px; */
   color: #fff;
   font-size: 20px;
   font-weight: 600;
