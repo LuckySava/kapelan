@@ -321,10 +321,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const showCreatedListTitle = ({ title, list }) => {
     const listTitle = `<div class="category">
-    <p class="arrow-back">
-    <span class="arrow">&#8592; </span>
-    <span class="arrow-text">Назад до категорії</span>
-    </p>
+    <div class="arrow-back">
+   <span class="arrow circle left"></span>
+    <p class="arrow-text">Назад до категорії</p>
+    </div>
     <h3 class="category-title">${title}</h3>
     ${list}
     </div>`;
@@ -347,10 +347,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const openDocument = () => {
     const bodyTextTemplate = (title, body) =>
       `<div class="finish-text">
-        <p class="arrow-back-inner">
-    <span class="arrow">&#8592; </span>
-    <span class="arrow-text">Назад до розділу</span>
-    </p>
+        <div class="arrow-back-inner">
+    <span class="arrow circle left"></span>
+    <p class="arrow-text">Назад до розділу</p>
+    </div>
     <h4 class="text-title">${title}</h4>
     <div class="text-body">${body}</div>
     </div>`;
