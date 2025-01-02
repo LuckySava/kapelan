@@ -102,11 +102,11 @@ sub {
   display: inline-block;
   line-height: 1.4;
   text-align: center;
-  color: #fff;
+  color: #5f7e42;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-color: #5f7e42;
+  /* background-color: #5f7e42; */
   position: absolute;
   right: 10px;
   bottom: 10px;
