@@ -190,40 +190,40 @@ const DATA = [
         url: "",
         plotTitle: "Молитва за поневолених",
         plotBody:
-          "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Отче! В ім’я Ісуса я молюся за тих, хто потрапив у полон. Прошу, дай сміливість та силу вистояти. Нехай вони розуміють, що про них пам’ятають. Даруй спокій і дай знати, що Ти ніколи їх не покинеш. Збережи їхній розум від хвилювань та тривог. Хай вони не зневірюються і завжди пам’ятають, за що ми боремося. Дозволь Україні знайти безпечний та швидкий спосіб врятувати їх та повернути додому. Благослови та скеруй усі наші дипломатичні перемови. Будь ласка, захисти кожного від тортур, катувань, насильства від рук ворога. Допоможи отримати належну медичну допомогу, харчування та відповідні умови перебування. Дозволь з гідністю, мужністю та надією проходити через страждання. Господи, я вірю, що Ти будеш повертати полонених, зниклих безвісти військових, волонтерів та цивільних до безпечного місця. Амінь.",
       },
-      {
-        plotId: 6,
-        externalLink: false,
-        url: "",
-        plotTitle: "Молитва для освячення зброї",
-        plotBody:
-          "6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      },
+      // {
+      //   plotId: 6,
+      //   externalLink: false,
+      //   url: "",
+      //   plotTitle: "Молитва для освячення зброї",
+      //   plotBody:
+      //     "6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      // },
       {
         plotId: 7,
         externalLink: false,
         url: "",
         plotTitle: "Молитва для освячення прапора",
         plotBody:
-          "7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Благословенний будь, Господи Боже наш! Ти через Твого Сина, Ісуса Христа, покликав до життя Твою Святу Церкву як знамено народам, щоб вона позбирала розсіяних Божих дітей разом. Поблагослови цей прапор, щоб ті, хто навколо нього зберуться і кого він вестиме за собою, через заступництво Пресвятої Діви Марії і всіх Святих, завжди визнавали Христа, і щоб ніхто з них, не загинув, але щоб усі дійшли до вічного щастя, через Христа, Господа нашого. Амінь.",
       },
-      {
-        plotId: 8,
-        externalLink: false,
-        url: "",
-        plotTitle: "Освячення води",
-        plotBody:
-          "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      },
-      {
-        plotId: 9,
-        externalLink: false,
-        url: "",
-        plotTitle: "Чин освячення усякої речі",
-        plotBody:
-          "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      },
+      // {
+      //   plotId: 8,
+      //   externalLink: false,
+      //   url: "",
+      //   plotTitle: "Освячення води",
+      //   plotBody:
+      //     "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      // },
+      // {
+      //   plotId: 9,
+      //   externalLink: false,
+      //   url: "",
+      //   plotTitle: "Чин освячення усякої речі",
+      //   plotBody:
+      //     "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      // },
     ],
   },
   {
