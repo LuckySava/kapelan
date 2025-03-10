@@ -151,6 +151,8 @@ sub {
 
 .category {
   width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .arrow {
@@ -196,6 +198,11 @@ sub {
   position: absolute;
   right: 5px;
   top: 7px;
+}
+
+.olive-color {
+  color: rgb(128, 0, 38);
+  font-weight: bold;
 }
 
 .list-title-withbody,
@@ -249,6 +256,8 @@ sub {
   font-size: 22px;
   color: #130f40;
   line-height: 1.4;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .print-raport {
