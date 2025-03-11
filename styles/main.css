@@ -61,6 +61,11 @@ h3 {
   max-width: 150px;
 }
 
+.logo-bottom img {
+  max-width: 180px;
+  width: 100%;
+}
+
 sub {
   color: #fff;
   font-size: 12px;
