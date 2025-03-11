@@ -265,6 +265,48 @@ const DATA = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Інше",
+    plot: [
+      {
+        plotId: 1,
+        externalLink: true,
+        url: "https://www.pomisna.info/uk/",
+        plotTitle: "Сайт Православної Церкви України (ПЦУ)",
+        plotBody: "",
+      },
+      {
+        plotId: 2,
+        externalLink: true,
+        url: "https://ugcc.ua/",
+        plotTitle: "Сайт Української Греко-Католицької Церкви (УГКЦ)",
+        plotBody: "",
+      },
+      {
+        plotId: 3,
+        externalLink: true,
+        url: "https://ngu.gov.ua/",
+        plotTitle: "Сайт Національної Гвардії України",
+        plotBody: "",
+      },
+      {
+        plotId: 4,
+        externalLink: true,
+        url: "https://dess.gov.ua/religion/",
+        plotTitle:
+          "Сайт Державної служби України з етнополітики та свободи совісті (ДЕСС)",
+        plotBody: "",
+      },
+      {
+        plotId: 5,
+        externalLink: true,
+        url: "https://www.kapelanstvo.ugcc.ua/",
+        plotTitle: "Департамент Військового Капеланства Патріаршої курії УГКЦ",
+        plotBody: "",
+      },
+    ],
+  },
 ];
 
 console.log(DATA);
