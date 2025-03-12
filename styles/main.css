@@ -158,6 +158,8 @@ sub {
   width: 100%;
   max-height: 500px;
   overflow-y: auto;
+  scrollbar-color: #672323 #6b876a;
+  scrollbar-width: thin;
 }
 
 .arrow {
@@ -263,6 +265,8 @@ sub {
   line-height: 1.4;
   max-height: 500px;
   overflow-y: auto;
+  scrollbar-color: #672323 #6b876a;
+  scrollbar-width: thin;
 }
 
 .print-raport {
