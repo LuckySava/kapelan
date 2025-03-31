@@ -802,11 +802,22 @@ const DATA = [
     title: "Документи, форми, рапорти",
     plot: [
       {
+        plotId: 0,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт (вимоги написання, зразок)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/raport.png'>",
+        print: true,
+        // file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      },
+      {
         plotId: 1,
         externalLink: false,
         url: "",
-        plotTitle: "Приклад написання рапорту для переведення на посаду",
-        plotBody: "<img class='print-raport' src='./images/pidyomni.png'>",
+        plotTitle: "Приклад написання листа-звернення до правлячого архієрея",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/list_vladyka.png'>",
         print: true,
         // file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       },
@@ -814,8 +825,190 @@ const DATA = [
         plotId: 2,
         externalLink: false,
         url: "",
-        plotTitle: "Рапорт для відрядження",
-        plotBody: "<img class='print-raport' src='./images/pidyomni.png'>",
+        plotTitle: "Рапорт на лікарняний",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/likarnyaniy.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 3,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на матеріальну допомогу",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/materialka.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 4,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на путівку у медичний центр 'Нові Cанжари'",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 5,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт по визову на сесію",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 6,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт по вихідному дню",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 7,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт по відпустці зміна в наказі",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 8,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на щорічну відпустку",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 9,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт по першому дзвонику (школа)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 10,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на відрядження (оплата)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/vidryadzhennya_oplata.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 11,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на матеріальну допомогу (смерть)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/materialka_smert.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 12,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на виплату алміментів (дитина)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 13,
+        externalLink: false,
+        url: "",
+        plotTitle: "Доповідка по РОС",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 14,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на заміну посвідчення",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 14,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт про продовження контракту",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 15,
+        externalLink: false,
+        url: "",
+        plotTitle: "Рапорт на виїзд за межі гарнізону",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/example_raport.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 16,
+        externalLink: false,
+        url: "",
+        plotTitle: "Лист ТрУ (вимоги написання)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/list_TrU_vimogy.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 17,
+        externalLink: false,
+        url: "",
+        plotTitle: "Лист на міністерство (міністра) (вимоги написання)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/list_ministr_vimogy.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 18,
+        externalLink: false,
+        url: "",
+        plotTitle:
+          "Лист на Держ. служубу спеціального зв'язку та захисту (вимоги написання)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/list_zvyazok_vimogy.png'>",
+        print: true,
+        // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
+      },
+      {
+        plotId: 19,
+        externalLink: false,
+        url: "",
+        plotTitle: "Лист на МВС департамент (вимоги написання)",
+        plotBody:
+          "<img class='print-raport' src='./images/raporty/list_priklak.png'>",
         print: true,
         // file: "https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf",
       },
