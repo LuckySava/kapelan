@@ -1014,8 +1014,122 @@ const DATA = [
       },
     ],
   },
+
   {
     id: 6,
+    title: "Довідник капелана",
+    plot: [
+      {
+        plotId: 0,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Проведення навчального збору із представниками служб військового капеланства військових частин оперативно-територіальних об’єднань, вищих військових навчальних закладів, установ, організацій військових частин, що не входять до складу оперативно-територіальних об’єднань Національної гвардії України",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 1,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Постанова Кабінету Міністрів України Про затвердження Положення про порядок видачі мандата на право здійснення військової капеланської діяльності",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 2,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Наказ Міністра Внутрішніх справ України Про окремі питання військового капеланства №18 від 17.01.2023 Про окремі питання військового капеланства",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 3,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Положення про організацію роботи Служби військового капеланства в Національній гвардії України",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 4,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Досвід Королівської капеланської служби Збройних Сил Канади",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 5,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle: "Досвід США, Великобританії, Німеччини, Франції, Польщі",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 6,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Теми для бесід з військовослужбовцями духовно-морального спрямування",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 7,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Теми для бесід з військовослужбовцями за церковно-релігійним і національно-історичним календарем",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 8,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Теми для бесід з військовослужбовцями за церковно-релігійним і національно-історичним календарем",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 9,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle:
+          "Проєкт шеврона «Служба військового капеланства Національної гвардії України»",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 10,
+        externalLink: true,
+        url: "images/raporty/putivnuk.pdf",
+        plotTitle: "Військові звання Національної гвардії України",
+        plotBody: "",
+        download: true,
+      },
+      {
+        plotId: 11,
+        externalLink: true,
+        url: "https://zakon.rada.gov.ua/laws/show/z0389-23#Text",
+        plotTitle:
+          "ПОРЯДОК розподілу квот конфесійного представництва військових капеланів у Національній гвардії України та Державній прикордонній службі України. Наказ МВС № 18 від 17.01.2023",
+        plotBody: "",
+        download: false,
+      },
+    ],
+  },
+
+  {
+    id: 7,
     title: "Інше",
     plot: [
       {
@@ -1058,9 +1172,28 @@ const DATA = [
   },
 ];
 
-console.log(DATA);
-
 document.addEventListener("DOMContentLoaded", () => {
+  // PASSWORD WINDOW
+
+  const body = document.querySelector(".body");
+  const passwordWindow = document.querySelector(".password-window");
+  const passworInputdWindow = document.querySelector(".password-window input");
+  const demoContainer = document.querySelector(".demo-container");
+  const passwordButton = document.querySelector(".password-window button");
+  const passwordErrorMessage = document.querySelector(
+    ".password-window error-message"
+  );
+
+  passworInputdWindow.addEventListener("input", function (e) {
+    if (this.value === "ngu") {
+      passwordWindow.remove();
+      body.style.overflow = "unset";
+      demoContainer.style.opacity = 1;
+    }
+  });
+
+  // END PASSWORD WINDOW
+
   let CURRENT_CATEGORY_ID = null;
 
   // Create top level app title (by category)
@@ -1112,7 +1245,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const list = category.plot.map((el) => {
       console.log("EL CATEGORY", el);
       if (el.externalLink && el.url) {
-        return `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle} <span class="link-symbol">&#x1F517;</span></a>`;
+        return el?.download
+          ? `<a download data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle} <span class="link-symbol download-link-symbol">&#10515;</span></a>`
+          : `<a data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-titlelink" target="_blank" href=${el.url}>${el.plotTitle} <span class="link-symbol">&#x1F517;</span></a>`;
       }
 
       if (el?.print && el.print) {
