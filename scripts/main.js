@@ -729,7 +729,7 @@ const DATA = [
         url: "",
         plotTitle: "Обідниця",
         plotBody:
-          "<span style='color: red'>Священник бере святе Євангеліє, творить ним знак хреста над антимінсом і виголошує:</span> Благословенне Царство Отця, і Сина, і Святого Духа нині, і повсякчас, і на віки віків. <br> <span style='color: blue'> Хор:</span> Амінь.<br> <span style='font-weight: bold'> Велика, або мирна, ектенія:</span> <br> <span style='color: red'>Священник: </span> В мирі Господу помолимось. <br> <span style='color: blue'> Хор: </span> Господи, помилуй. <br> Священник: За мир з неба і спасіння душ наших Господу помолимось. Хор: Господи, помилуй. <span style='color: red'> Священник: </span> За мир усього світу, за добрий стан святих Божих Церков і за з’єднання всіх Господу помолимось. <br> <span style='color: blue'>Хор: <br> </span> Господи, помилуй. <br> <span style='color: red'> Священник: </span> За святий храм цей і тих, що з вірою, побожністю та страхом Божим входять до нього, Господу помолимось. <br> <span style='color: blue'>Хор: </span> Господи, помилуй. <br> <span style='color: red'> Священник: </span> За владику і отця нашого Блаженнійшого Митрополита (ім’я) і владику нашого Преосвященного єпископа (ім’я), чесне пресвітерство, у Христі дияконство, за увесь причет і людей Господу помилимось...",
+          "<span style='color: #d60d0d'>Священник бере святе Євангеліє, творить ним знак хреста над антимінсом і виголошує:</span> Благословенне Царство Отця, і Сина, і Святого Духа нині, і повсякчас, і на віки віків. <br> <span style='color: #0000d3'> Хор:</span> Амінь.<br> <span style='font-weight: bold'> Велика, або мирна, ектенія:</span> <br> <span style='color: #d60d0d'>Священник: </span> В мирі Господу помолимось. <br> <span style='color: #0000d3'> Хор: </span> Господи, помилуй. <br> Священник: За мир з неба і спасіння душ наших Господу помолимось. Хор: Господи, помилуй. <span style='color: #d60d0d'> Священник: </span> За мир усього світу, за добрий стан святих Божих Церков і за з’єднання всіх Господу помолимось. <br> <span style='color: #0000d3'>Хор: <br> </span> Господи, помилуй. <br> <span style='color: #d60d0d'> Священник: </span> За святий храм цей і тих, що з вірою, побожністю та страхом Божим входять до нього, Господу помолимось. <br> <span style='color: #0000d3'>Хор: </span> Господи, помилуй. <br> <span style='color: #d60d0d'> Священник: </span> За владику і отця нашого Блаженнійшого Митрополита (ім’я) і владику нашого Преосвященного єпископа (ім’я), чесне пресвітерство, у Христі дияконство, за увесь причет і людей Господу помилимось...",
       },
       {
         plotId: 2,
@@ -1241,6 +1241,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const createCategoryListTitle = (category) => {
     const title = category.title;
+    const id = category.id;
     console.log("CATeGORY", category);
     const list = category.plot.map((el) => {
       console.log("EL CATEGORY", el);
@@ -1257,16 +1258,21 @@ document.addEventListener("DOMContentLoaded", () => {
       return `<h4 data-titleId=${el.plotId} data-categoryId=${category.id} class="list-title list-title-withbody">${el.plotTitle}</h4>`;
     });
 
-    return { title, list: list.join(" ") };
+    return { title, id, list: list.join(" ") };
   };
 
-  const showCreatedListTitle = ({ title, list }) => {
+  const showCreatedListTitle = ({ id, title, list }) => {
     const listTitle = `<div class="category">
     <div class="arrow-back">
    <span class="arrow circle left"></span>
     <p class="arrow-text">Назад до категорії</p>
     </div>
     <h3 class="category-title">${title}</h3>
+    ${
+      id == 4
+        ? "<div class='tabs-categoryList'><img src='./images/cross_pcu.jpg'></div>"
+        : ""
+    }
     <div class="category-list-title">${list}</div>
     </div>`;
 
@@ -1322,6 +1328,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const categoryList = createCategoryListTitle(category);
 
             showCreatedListTitle(categoryList);
+            console.log("======categoryList====", categoryList);
             app.classList.remove("hide-category-title");
           });
       })

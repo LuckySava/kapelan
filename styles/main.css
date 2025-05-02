@@ -234,8 +234,17 @@ sub {
 }
 
 .category-list-title {
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: auto;
+}
+
+.tabs-categoryList {
+  text-align: center;
+}
+
+.tabs-categoryList img {
+  width: 100%;
+  max-width: 75px;
 }
 
 .arrow {
