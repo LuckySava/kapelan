@@ -1179,10 +1179,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const passwordWindow = document.querySelector(".password-window");
   const passworInputdWindow = document.querySelector(".password-window input");
   const demoContainer = document.querySelector(".demo-container");
-  const passwordButton = document.querySelector(".password-window button");
-  const passwordErrorMessage = document.querySelector(
-    ".password-window error-message"
-  );
+  // const passwordButton = document.querySelector(".password-window button");
+  // const passwordErrorMessage = document.querySelector(
+  //   ".password-window error-message"
+  // );
 
   passworInputdWindow.addEventListener("input", function (e) {
     if (this.value === "ngu") {
@@ -1267,7 +1267,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p class="arrow-text">Назад до категорії</p>
     </div>
     <h3 class="category-title">${title}</h3>
-    ${list}
+    <div class="category-list-title">${list}</div>
     </div>`;
 
     app.innerHTML = "";
