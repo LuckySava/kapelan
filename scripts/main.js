@@ -724,6 +724,14 @@ const DATA = [
     title: "Молитвослов капелана. Требник",
     plot: [
       {
+        plotId: 15,
+        externalLink: false,
+        url: "",
+        plotTitle: "Божествена літургія Іоана Золотоустого",
+        plotBody:
+          "14 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
         plotId: 1,
         externalLink: false,
         url: "",
@@ -743,7 +751,7 @@ const DATA = [
         plotId: 3,
         externalLink: false,
         url: "",
-        plotTitle: "Молитва за воїнів",
+        plotTitle: "Чмн молебня за воїнів під час війни",
         plotBody:
           "Господи Боже сил, Боже спасіння нашого, Ти Єдиний твориш чудеса. Поглянь в милості і щедротах на смирення рабів Твоїх і чоловіколюбно вислухай і помилуй нас: бо вороги наші зібралися на нас, щоб погубити нас і знищити державу нашу та святині наші. Допоможи нам Боже, Спасителю наш, і визволи нас, заради слави імені Твого, і нехай до нас будуть додані слова, сказані Мойсеєм: будьте сміливими, стійте і побачите спасіння від Господа, бо Господь переможе за нас. Так, Господи Боже, Спасителю наш, не пом’яни беззаконь і неправд людей Твоїх і не відвертайся від нас гнівом Своїм, але в милості і щедротах Твоїх відвідай смиренних рабів Твоїх, що до Твоєї милості припадають: повстань на допомогу нам і подай воїнству нашому з Ім’ям Твоїм перемогти. Погуби наміри і неправедні насмілення тих, хто йде на нас війною. Молимось до Тебе, Владико миру і спокою нашого, щоб як щезає дим, так нехай щезнуть вороги наші, і як прах розсипається від лиця вітру, так нехай розвіються їхні злі думки знищити державу нашу Українську. Господи, втихомир тих, хто противиться заповідям та постановам Твоїм. Поверни їм пам’ять Твоєї заповіді: Блаженні миротворці, бо вони синами Божими назвуться. А для тих, хто противиться цій Твоїй заповіді, пошли гнів, скорботу і ангелів лютих, які вселять в них страх і пам’ять про те, що і вони себе християнами називають. Нехай же Господи буде воля Твоя над нами і, якщо Твоє Провидіння буде таким, щоб покласти воїнам нашим у битві за Віру і Україну душі свої, то і їм прости гріхи їхні, і в день праведного Твого Суду подай вінці нетління. Але віримо і молимось Тобі Великодаровитий, Господи, що ти захистиш, втихомириш і напоумиш та до спокою приведеш всіх. Бо Ти єси захист і перемога, і спасіння, для тих хто надіється на Тебе і Тобі славу возсилаємо Отцю, і Сину, і Святому Духу, нині і повсякчас, і на віки віків. Амінь!",
       },
@@ -775,10 +783,123 @@ const DATA = [
         plotId: 7,
         externalLink: false,
         url: "",
-        plotTitle: "Молитва для освячення прапора",
+        plotTitle: "Молитва для освячення бойового прапора чи хоругви",
         plotBody:
           "Благословенний будь, Господи Боже наш! Ти через Твого Сина, Ісуса Христа, покликав до життя Твою Святу Церкву як знамено народам, щоб вона позбирала розсіяних Божих дітей разом. Поблагослови цей прапор, щоб ті, хто навколо нього зберуться і кого він вестиме за собою, через заступництво Пресвятої Діви Марії і всіх Святих, завжди визнавали Христа, і щоб ніхто з них, не загинув, але щоб усі дійшли до вічного щастя, через Христа, Господа нашого. Амінь.",
       },
+      {
+        plotId: 16,
+        externalLink: false,
+        url: "",
+        plotTitle: "Чин похорону",
+        plotBody:
+          "16 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 8,
+        externalLink: false,
+        url: "",
+        plotTitle: "Літія",
+        plotBody:
+          "8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 9,
+        externalLink: false,
+        url: "",
+        plotTitle: "Таїнство Святого Хрещення і Миропомазання",
+        plotBody:
+          "9 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 20,
+        externalLink: false,
+        url: "",
+        plotTitle: "Скорочений чин Святого Хрещення",
+        plotBody:
+          "9 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 21,
+        externalLink: false,
+        url: "",
+        plotTitle: "Молитиви перед Святим Причастям",
+        plotBody:
+          "20 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 22,
+        externalLink: false,
+        url: "",
+        plotTitle: "Молитиви після Святого Причастя",
+        plotBody:
+          "20 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 10,
+        externalLink: false,
+        url: "",
+        plotTitle: "Чин Вінчання",
+        plotBody:
+          "10 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 13,
+        externalLink: false,
+        url: "",
+        plotTitle: "Чин на освячення всякої речі",
+        plotBody:
+          "13 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 18,
+        externalLink: false,
+        url: "",
+        plotTitle: "Молитви на всяку потребу",
+        plotBody:
+          "18 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 14,
+        externalLink: false,
+        url: "",
+        plotTitle: "Молитви за представників військових форумуань",
+        plotBody:
+          "14 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 12,
+        externalLink: false,
+        url: "",
+        plotTitle: "Чин освячення автомобіля",
+        plotBody:
+          "12 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 11,
+        externalLink: false,
+        url: "",
+        plotTitle: "Благословення і освячення пасок",
+        plotBody:
+          "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 11,
+        externalLink: false,
+        url: "",
+        plotTitle: "Освячення води в крайній потребі",
+        plotBody:
+          "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        plotId: 23,
+        externalLink: false,
+        url: "",
+        plotTitle: "Освячення зілля",
+        plotBody:
+          "11 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+
       // {
       //   plotId: 8,
       //   externalLink: false,
@@ -1072,24 +1193,24 @@ const DATA = [
         plotBody: "",
         download: true,
       },
-      {
-        plotId: 6,
-        externalLink: true,
-        url: "images/raporty/putivnuk.pdf",
-        plotTitle:
-          "Теми для бесід з військовослужбовцями духовно-морального спрямування",
-        plotBody: "",
-        download: true,
-      },
-      {
-        plotId: 7,
-        externalLink: true,
-        url: "images/raporty/putivnuk.pdf",
-        plotTitle:
-          "Теми для бесід з військовослужбовцями за церковно-релігійним і національно-історичним календарем",
-        plotBody: "",
-        download: true,
-      },
+      // {
+      //   plotId: 6,
+      //   externalLink: true,
+      //   url: "images/raporty/putivnuk.pdf",
+      //   plotTitle:
+      //     "Теми для бесід з військовослужбовцями духовно-морального спрямування",
+      //   plotBody: "",
+      //   download: true,
+      // },
+      // {
+      //   plotId: 7,
+      //   externalLink: true,
+      //   url: "images/raporty/putivnuk.pdf",
+      //   plotTitle:
+      //     "Теми для бесід з військовослужбовцями за церковно-релігійним і національно-історичним календарем",
+      //   plotBody: "",
+      //   download: true,
+      // },
       {
         plotId: 8,
         externalLink: true,
