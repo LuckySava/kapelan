@@ -938,7 +938,7 @@ const DATA = [
         url: "",
         plotTitle: "Приклад написання листа-звернення до правлячого архієрея",
         plotBody:
-          "<img class='print-raport' src='./images/raporty/list_vladyka.png'>",
+          "<img class='print-raport' src='./images/raporty/list_vladika.png'>",
         print: true,
         // file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       },
