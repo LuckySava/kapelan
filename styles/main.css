@@ -419,7 +419,7 @@ sub {
 
 /* End Button Left */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 102px) {
   h2 {
     font-size: 40px;
   }
